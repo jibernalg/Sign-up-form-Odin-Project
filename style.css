@@ -1,0 +1,165 @@
+@font-face {
+    font-family: customFont;
+    src: url(./fonts/Norse-Bold.otf)
+}
+html body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100vw;
+    height: 100vh;
+}
+.side-menu{
+    grid-column: 1/2;
+    background: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size:cover;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(5,1fr); 
+    font-size: 0.7rem; 
+    height: 100vh;
+    min-width: 345px;
+}
+.logo{
+    grid-row: 3/4;
+    background-color: rgba(0, 0, 0, 0.527);
+    font-size: 1.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: customFont;
+}
+img {
+    width: 8vw;
+}
+.side-menu p {
+    grid-row: 6/7;
+    text-align: end;
+    justify-content: end;
+    margin-right: 5px;
+}
+
+.form-section{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(3,1fr); 
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+.header{
+    grid-row: 1/2;  
+    padding: 1.2rem 2vw 3rem 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.input-section{
+    grid-row: 2/3;  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.2rem 2vw 3rem 2vw;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
+form {
+    display: flex;
+    flex-flow:wrap;
+    gap: 1rem;
+    font-size: 1rem;
+}
+label {
+    width: 12rem;
+    margin-bottom: 15px;  
+}
+input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
+    font-size: .9rem;
+    margin-top: 3px;
+}
+.submit-section{
+    grid-row: 3/4;
+    padding: 1.2rem 2vw 3rem 2vw;
+    display:inline-block;
+    flex-direction: column;
+    justify-content: center;  
+    font-size: 1.2rem;
+}
+button{
+    padding: .8rem 1.3rem;
+    font-size: 1.3rem;
+    background-color: rgb(140, 138, 140);
+    transition:ease-in-out 1.3s;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: -1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+a{
+    text-decoration: none;
+    color: rgb(140, 138, 140);
+}
+button:hover{
+    background-color: rgb(28, 109, 26);
+}
+.error{
+    color: red;
+    font-size: small;
+}
+
+@media (max-width:915px) {
+    .main{   
+        display: flex;
+        flex-direction: column;
+    }
+    .side-menu{
+        height: 15rem;
+        width: 100vw;
+    }
+    .form-section{
+       width: 100vw;
+       justify-content: center;
+       height: 50rem;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+        
+    }
+    .input-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .submit-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        align-items: center;
+        justify-content: center; 
+    }
+}
+
+
+  
+
+
+
+
+
